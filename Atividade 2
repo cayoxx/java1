@@ -1,0 +1,32 @@
+package elenco;
+import java.util.Scanner;
+	
+public class AlefManga {
+	
+	public static void main(String[] args) {
+			
+		Scanner ler = new Scanner(System.in);
+		double s = 0;
+		double n = 0;
+		int i = 0;
+			
+		System.out.println("Informe 5 números:");
+		System.out.println("=================================");
+		
+		while (i < 5) {
+			i++;
+	             n = ler.nextInt();
+		
+	            s = s + n;
+	        }
+		
+	    double x = s/ 5;
+	    
+	    System.out.println("Soma:" + s);
+	    System.out.println("Média:" + x);
+		
+		ler.close();
+		}
+	}
+
+	
