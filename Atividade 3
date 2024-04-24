@@ -1,23 +1,28 @@
 package elenco;
 import java.util.Scanner;
-    
 public class AlefManga {
-    
-    public static void main(String[] args) {
-            
-        Scanner ler = new Scanner(System.in);
-        int a, i = 0;
-            
-        System.out.println("Informe um número: ");
-        a = ler.nextInt();
-        System.out.println("=================================");
-        System.out.println("Números ímpares até " + a + ":");
-        while (i <= a) {
-               if (i % 2 != 0) {
-            System.out.println(i);  
-        }
-            i++;
-        ler.close();
-        }
-    }
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+		Scanner ler = new Scanner(System.in);
+		int impar = 0; int i = 1, par = 0, num;
+		
+		while (i <= 10) {
+			
+			System.out.println("Informe o " + i + "° número:");
+			num = ler.nextInt();
+			if (num % 2 ==0) {
+				par = par + 1;
+			}
+			else {
+				impar = impar + 1;
+			}
+			i++;
+		}
+		System.out.println("Quantidade de par: " + par);
+		System.out.println("Quantidade de impar: " + impar);
+
+	}
+
 }
